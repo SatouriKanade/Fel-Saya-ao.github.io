@@ -32,53 +32,53 @@ img {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap; /* Allows the images to wrap onto new lines if necessary */
-    justify-content: center; /* Center the gallery images */
-    gap: 20px; /* Space between each image */
-    padding: 20px; /* Padding around the gallery */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
-/* Polaroid effect for each image */
+
 .polaroid {
-    background-color: white; /* White background to mimic Polaroid */
+    background-color: white; 
     padding: 10px;
-    width: 300px; /* Fixed width for Polaroid container */
-    text-align: center; /* Center the caption */
-    border: 1px solid #ddd; /* Light gray border around the photo */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
-    margin-bottom: 20px; /* Space between rows */
-    transition: transform 0.3s ease; /* Adds hover effect */
+    width: 300px; 
+    text-align: center; 
+    border: 1px solid #ddd; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease; 
 }
 
-/* Style for the image inside the polaroid */
+
 .polaroid img {
-    width: 100%; /* Image takes full width of container */
-    height: auto; /* Maintain the aspect ratio */
+    width: 100%; 
+    height: auto; 
     display: block;
 }
 
 .polaroid img1 {
-    width: 100%; /* Image takes full width of container */
-    height: 50%; /* Maintain the aspect ratio */
+    width: 100%; 
+    height: 50%; 
     display: block;
 }
-/* Style for the caption under each Polaroid image */
+
 .polaroid .caption {
-    font-family: cursive; /* Classic typewriter font */
+    font-family: cursive; 
     font-size: 16px;
     padding-top: 10px;
     color: #333;
 }
 
-/* Hover effect for a Polaroid image */
+
 .polaroid:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 
-/* Responsive design */
+
 @media screen and (max-width: 768px) {
     .polaroid {
-        width: 100%; /* Polaroid will take full width of screen on small devices */
+        width: 100%; 
     }
 }
 
