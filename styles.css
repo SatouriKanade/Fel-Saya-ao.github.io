@@ -56,15 +56,15 @@ img {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap; /* Allows the images to wrap onto new lines if necessary */
-    justify-content: center; /* Center the gallery images */
-    gap: 20px; /* Space between each image */
-    padding: 20px; /* Padding around the gallery */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
 }
 
 @media screen and (max-width: 768px) {
     .polaroid {
-        width: 100%; /* Polaroid will take full width of screen on small devices */
+        width: 100%; 
     }
 }
 
@@ -125,24 +125,24 @@ nav ul li a:hover {
     display: none;
     cursor: pointer;
 }
-/* Style for the gallery container */
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto-adjusts column width */
-    gap: 10px; /* Adds space between the images */
-    padding: 10px; /* Padding around the gallery */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px; 
+    padding: 10px; 
 }
 
-/* Style for each image container */
+
 .image-container {
-    overflow: hidden; /* Ensures that images fit within the container */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Make images responsive */
+
 .image-container img {
-    width: 100%; /* Makes the image fill the container */
-    height: auto; /* Maintains the image's aspect ratio */
-    display: block; /* Removes any extra space around the image */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
