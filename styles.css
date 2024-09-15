@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #b9f2ff ;
     color: #333;
+    background: linear-gradient(135deg, #f0f8ff, #add8e6);
+    
 }
 header {
     background-color: #a6e7ff;
@@ -55,13 +57,9 @@ img {
     width: 100%; 
     height: auto; 
     display: block;
+    transition: transform 0.3s, filter 0.3s;
 }
 
-.polaroid img1 {
-    width: 100%; 
-    height: 50%; 
-    display: block;
-}
 
 .polaroid .caption {
     font-family: cursive; 
@@ -73,6 +71,11 @@ img {
 
 .polaroid:hover {
     transform: scale(1.05); 
+}
+
+.polaroid:hover img {
+    transform: scale(1.05);
+    filter: grayscale(50%);
 }
 
 
@@ -88,6 +91,25 @@ footer {
     background-color: #a6e7ff;
     color: rgb(0, 0, 0);
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -146,6 +168,12 @@ nav ul li a:hover {
     padding: 10px; 
 }
 
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px; 
+    padding: 10px; 
+}
 
 .image-container {
     overflow: hidden; 
@@ -158,4 +186,26 @@ nav ul li a:hover {
     width: 100%; 
     height: auto; 
     display: block; 
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
 }
