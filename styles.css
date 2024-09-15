@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #b9f2ff ;
     color: #333;
-    background: linear-gradient(135deg, #f0f8ff, #add8e6);
+    background: linear-gradient(135deg, #f0f8ff, #94d9f0);
     
 }
 header {
@@ -75,7 +75,7 @@ img {
 
 .polaroid:hover img {
     transform: scale(1.05);
-    filter: grayscale(50%);
+    filter: grayscale(45%);
 }
 
 
